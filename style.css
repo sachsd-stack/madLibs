@@ -1,0 +1,32 @@
+h1 {
+    text-align:center;
+    margin-block-end:0px;
+
+}
+
+#headingAndInputSection {
+    background: linear-gradient(to bottom right, rgb(19, 241, 241), rgb(16, 70, 172) 60%, darkred 100%);
+    text-align:center;
+}
+
+input {
+    text-align:center;
+    margin:0.2vw 20vw;
+    border-color:black;
+}
+
+/* #completeMadLib {
+    background: linear-gradient(to bottom, rgb(18, 151, 0), rgb(138, 79, 28) 100%, rgb(0, 0, 0) 1%);
+} */
+
+p {
+    text-align:center;
+}
+
+p, li{
+    font-family: 'Allerta Stencil', sans-serif;
+}
+
+::placeholder {
+    color:black;
+}
