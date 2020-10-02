@@ -9,9 +9,15 @@ h1 {
     text-align:center;
 }
 
+form {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-gap:1vw;
+    margin-top:1vw;
+}
+
 input {
     text-align:center;
-    margin:0.2vw 20vw;
     border-color:black;
 }
 
@@ -25,8 +31,4 @@ p {
 
 p, li{
     font-family: 'Allerta Stencil', sans-serif;
-}
-
-::placeholder {
-    color:black;
 }
