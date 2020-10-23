@@ -20,11 +20,14 @@ form {
 input {
     text-align:center;
     border-color:black;
+    box-sizing: border-box;
 }
 
-/* #completeMadLib {
-    background: linear-gradient(to bottom, rgb(18, 151, 0), rgb(138, 79, 28) 100%, rgb(0, 0, 0) 1%);
-} */
+#submitButton {
+    font-size:28px;
+    background-color:cyan;
+    margin: 0 auto;
+}
 
 p {
     text-align:center;
@@ -32,4 +35,16 @@ p {
 
 p, li{
     font-family: 'Allerta Stencil', sans-serif;
+}
+
+@media (max-width:500px) {
+    input {
+        width:40%;
+    }
+}
+
+@media (min-width:501px) {
+    input {
+        width:30%;
+    }
 }
