@@ -7,9 +7,6 @@ h1 {
 #headingAndInputSection {
     background: linear-gradient(to bottom right, rgb(19, 241, 241), rgb(16, 70, 172) 60%, darkred 100%);
     text-align:center;
-}
-
-form {
     display: grid;
     grid-template-columns: 100%;
     grid-gap:1vw;

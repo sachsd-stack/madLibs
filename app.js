@@ -15,6 +15,7 @@ function createParagraph() {
 
     var paragraph = "<p>If you are traveling in " + wordOne + " and find yourself having to cross a piranha-filled river, here's how to do it " + wordTwo + "." + "<ul><li>Piranhas are more " + wordThree + " during the day, so cross the river at night</li><li>Avoid areas with netted " + wordFour + " traps; piranhas may be " + wordFive + " there looking to " + wordSix + " them!</li><li>When " + wordSeven + " the river, swim " + wordEight + ". You don't want to wake them up and make them " + wordNine + "!</li><li>Whatever you do, if you have an open wound, try to find another way to get back to the " + wordTen + ". Piranhas are attracted to fresh " + wordEleven + " and will most likely take a bite out of your " + wordTwelve + " if you " + wordThirteen + " in the water!</li></ul></p>";
 
+    console.log(paragraph);
     document.getElementById("completeMadLib").innerHTML = paragraph;
     
 }
