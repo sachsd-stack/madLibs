@@ -1,17 +1,33 @@
-h1 {
-    text-align:center;
-    margin-block-end:0px;
-
+body {
+    background: linear-gradient(to bottom right, rgb(19, 241, 241), rgb(16, 70, 172) 60%, darkred 100%);
+    background-repeat: no-repeat;
 }
 
-#headingAndInputSection {
-    background: linear-gradient(to bottom right, rgb(19, 241, 241), rgb(16, 70, 172) 60%, darkred 100%);
+/* body * {
+    position: relative;
+    z-index: 2;
+}
+
+@keyframes bgChange {
+    0% {opacity:0;}
+    
+    100% {opacity:1;}
+} */
+
+.content{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to bottom right,  rgba(19, 241, 241, 0.9) 2%,  rgba(16, 70, 172, 0.9) 10%, rgba(139, 0, 0, 0.7) 30%), url("./img/riverBg.jpg");
+}
+
+#heading {
     text-align:center;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-gap:1vw;
-    margin-top:1vw;
-    padding-bottom:1vh;
+    margin-block-end:0px;
+    text-shadow:
+    -1px -1px 0 white,  
+     1px -1px 0 white,
+     -1px 1px 0 white,
+      1px 1px 0 white;
 }
 
 input {
@@ -20,23 +36,55 @@ input {
     box-sizing: border-box;
 }
 
-#submitButton {
-    font-size:28px;
-    background-color:cyan;
-    margin: 0 35%;
-}
-
 p {
     text-align:center;
 }
 
 p, li{
     font-family: 'Allerta Stencil', sans-serif;
+    color: white;
+    text-shadow:
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+    margin-top:0px;
+}
+
+#completeMadLib {
+    /* background-image: linear-gradient(to bottom, rgb(16, 70, 172) 10%, transparent 100%), url("./img/riverBg.jpg"); */
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+#headingAndInputSection {
+    /* background: linear-gradient(to bottom right, rgb(19, 241, 241), rgb(16, 70, 172) 60%, darkred 100%); */
+    text-align:center;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-gap:1vw;
+    margin-top:1vw;
+    padding-bottom:1vh;
+    position: relative;
+    z-index: 1;
+}
+
+#submitButton {
+    font-size:28px;
+    background-color:cyan;
+    margin: 0 35%;
 }
 
 @media (max-width:500px) {
     input {
         width:40%;
+    }
+
+    #submitButton {
+        font-size:28px;
+        background-color:cyan;
+        margin: 0 30%;
     }
 }
 
